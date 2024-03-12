@@ -16,9 +16,9 @@ public class App {
         handlerA.setNextHandler(handlerB);
 
         // Создаем запросы и отправляем их на обработку
-        Request request1 = new Request("Data with A");
-        Request request2 = new Request("Data with B");
-        Request request3 = new Request("Data with C");
+        Request request1 = new Request("1");
+        Request request2 = new Request("2");
+        Request request3 = new Request("3");
 
         handlerA.handleRequest(request1);
         handlerA.handleRequest(request2);
