@@ -24,11 +24,11 @@ class ConcreteHandlerA implements Handler {
     @Override
     public void handleRequest(Request request) {
         if (request.getData().contains("A")) {
-            System.out.println("ConcreteHandlerA handled the request: " + request.getData());
+            System.out.println("ConcreteHandlerA сделал: " + request.getData());
         } else if (nextHandler != null) {
             nextHandler.handleRequest(request);
         } else {
-            System.out.println("No handler could process the request: " + request.getData());
+            System.out.println("Некому делать процесс: " + request.getData());
         }
     }
 
@@ -45,11 +45,11 @@ class ConcreteHandlerB implements Handler {
     @Override
     public void handleRequest(Request request) {
         if (request.getData().contains("B")) {
-            System.out.println("ConcreteHandlerB handled the request: " + request.getData());
+            System.out.println("ConcreteHandlerB сделал: " + request.getData());
         } else if (nextHandler != null) {
             nextHandler.handleRequest(request);
         } else {
-            System.out.println("No handler could process the request: " + request.getData());
+            System.out.println("Некому делать процесс: " + request.getData());
         }
     }
 
