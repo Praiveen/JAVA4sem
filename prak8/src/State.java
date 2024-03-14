@@ -24,7 +24,7 @@ class Context {
 class ConcreteStateA implements State {
     @Override
     public void handle(Context context) {
-        System.out.println("ConcreteStateA handling request.");
+        System.out.println("ConcreteStateA делает");
         // Меняем состояние контекста
         context.setState(new ConcreteStateB());
     }
@@ -34,6 +34,6 @@ class ConcreteStateA implements State {
 class ConcreteStateB implements State {
     @Override
     public void handle(Context context) {
-        System.out.println("ConcreteStateB handling request.");
+        System.out.println("ConcreteStateB делает");
     }
 }
