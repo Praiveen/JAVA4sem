@@ -7,6 +7,7 @@ public class App {
         context.request();
         context.request();
 
+        // Состояние, Цепочка обязанностей.
 
 
 

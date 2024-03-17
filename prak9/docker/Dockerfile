@@ -1,4 +1,4 @@
-FROM openjdk:11
-COPY your-app.jar /app/your-app.jar
+FROM openjdk:11-jre-slim
 WORKDIR /app
-CMD ["java", "-jar", "your-app.jar"]
+COPY prak9.jar /app/prak9.jar
+CMD ["java", "-jar", "prak9.jar"]

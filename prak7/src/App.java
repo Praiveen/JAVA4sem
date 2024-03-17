@@ -8,6 +8,8 @@ public class App {
         composite.addComponent(new RealSubject());
         composite.request(); // Вызов операции для компоновщика
 
+        // Заместитель, Компоновщик.
+
 
 
 
