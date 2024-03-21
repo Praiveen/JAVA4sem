@@ -11,15 +11,11 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
-
-    // This dependency is used by the application.
     implementation 'com.google.guava:guava:31.1-jre'
 }
 
 application {
-    // Define the main class for the application.
     mainClass = 'prak9'
 }
 
@@ -39,11 +35,11 @@ task moveJar(type: Copy) {
 
 task buildDocker(type: Exec) {
     dependsOn moveJar
-    commandLine 'docker', 'build', '-t', 'myapp:latest', '.'
+    commandLine 'docker', 'build', '-t', 'prak9:latest', '.'
     workingDir 'docker'
 }
 
 task runDocker(type: Exec) {
     dependsOn buildDocker
-    commandLine 'docker', 'run', '-d', '-p', '8080:8080', 'myapp:latest'
+    commandLine 'docker', 'run', '-d', '-p', '8080:8080', 'prak9:latest'
 }
