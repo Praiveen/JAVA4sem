@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class Middle implements Programmer {
     @Override
     public String doCoding() {
-        return "Middle";
+        return "Write Middle";
     }
 }

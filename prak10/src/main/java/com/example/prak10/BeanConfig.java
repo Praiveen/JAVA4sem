@@ -21,21 +21,21 @@ public class BeanConfig {
         return new Senior();
     }
 
-    @Bean("junior")
+    @Bean("juniorr")
     public Programming startProgrammingJun() {
         Programming programming = new Programming();
         programming.setType(junProgrammer());
         return programming;
     }
 
-    @Bean("middle")
+    @Bean("middlee")
     public Programming startProgrammingMid() {
         Programming programming = new Programming();
         programming.setType(midProgrammer());
         return programming;
     }
 
-    @Bean("senior")
+    @Bean("seniorr")
     public Programming startProgrammingSen() {
         Programming programming = new Programming();
         programming.setType(senProgrammer());

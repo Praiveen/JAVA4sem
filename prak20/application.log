@@ -1,0 +1,35 @@
+1651 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 8.0.1.Final
+1788 [restartedMain] INFO  c.example.prak20.Prak20Application – Starting Prak20Application using Java 21.0.2 with PID 28456 (C:\MIREA\JAVA\JAVA4sem\prak20\build\classes\java\main started by Ivan in C:\MIREA\JAVA\JAVA4sem\prak20)
+1789 [restartedMain] INFO  c.example.prak20.Prak20Application – No active profile set, falling back to 1 default profile: "default"
+1894 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1894 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3583 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3690 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+3874 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner – No MyBatis mapper was found in '[com.example.prak20]' package. Please check your configuration.
+5093 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port 8080 (http)
+5110 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+5113 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+5114 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.19]
+5221 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+5221 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3325 ms
+5291 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+5618 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6473ed0a
+5623 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+5641 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration – H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost/test'
+5890 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+5966 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.4.4.Final
+6023 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator – HHH000026: Second-level cache disabled
+6439 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo – No LoadTimeWeaver setup: ignoring JPA class transformer
+6509 [restartedMain] WARN  org.hibernate.orm.deprecation – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+7416 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+7498 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8126 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+9081 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+9106 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+9135 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port 8080 (http) with context path ''
+9154 [restartedMain] INFO  c.example.prak20.Prak20Application – Started Prak20Application in 8.351 seconds (process running for 9.516)
+23524 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+23525 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+23528 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+23602 [http-nio-8080-exec-1] INFO  com.example.prak20.ProductService – log:getAllProducts
+23835 [http-nio-8080-exec-1] INFO  c.e.p.ServiceExecutionTimeAspect – Method List com.example.prak20.ProductService.getAllProducts() runs 230 ms

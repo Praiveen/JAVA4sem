@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class Senior implements Programmer{
     @Override
     public String doCoding() {
-        return "Senior";
+        return "Write Senior";
     }
 }
