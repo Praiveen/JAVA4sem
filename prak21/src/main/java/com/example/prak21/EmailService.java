@@ -82,7 +82,7 @@ public class EmailService {
     @Async
     public void sendEmail(String to, String subject, String text) {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setFrom("qqqqq");
+        mailMessage.setFrom("ivan.karagachev@gmail.com");
         mailMessage.setTo(to);
         mailMessage.setSubject(subject);
         mailMessage.setText(text);
