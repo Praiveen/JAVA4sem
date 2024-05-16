@@ -19,7 +19,7 @@ public class DataUpdateScheduler {
     private static final String DIRECTORY_PATH = "C:/MIREA/JAVA/JAVA4sem/prak22/Dir";
 
 //    @Scheduled(cron = "0 */30 * * * *")
-    @Scheduled(cron = "0 * * * * *") // Запуск каждую минуту
+    @Scheduled(cron = "0 * * * * *")
     public void updateData() {
         clearDirectory();
         productService.saveDataToFiles();
