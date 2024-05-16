@@ -46,13 +46,12 @@ public class ProductService {
     public void saveDataToFiles() {
         log.info("log:saveDataToFiles");
         List<Product> products = productRepository.findAll();
-        String directoryPath = "C:/MIREA/JAVA/JAVA4sem/prak22/Dir"; // Путь к директории для сохранения файлов
+        String directoryPath = "C:/MIREA/JAVA/JAVA4sem/prak22/Dir";
         for (Product product : products) {
             String filename = directoryPath + "/" + product.getId() + ".txt";
             try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename), StandardCharsets.UTF_8))) {
                 writer.write("Name: " + product.getName() + "\n");
                 writer.write("Price: " + product.getPrice() + "\n");
-                // Добавьте дополнительные поля, если это необходимо
                 log.info("Product data saved to file: {}", filename);
             } catch (IOException e) {
                 log.error("Failed to save product data to file: {}", filename, e);
